@@ -13,6 +13,7 @@ class RoomsController < ApplicationController
       redirect_to root_path
     else
       render :new
+    end
   end
 
   def destroy
@@ -20,8 +21,6 @@ class RoomsController < ApplicationController
     room.destroy
     redirect_to root_path
   end
-
-
 
   private
 
